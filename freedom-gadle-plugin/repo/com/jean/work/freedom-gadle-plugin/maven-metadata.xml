@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.jean.work</groupId>
+  <artifactId>freedom-gadle-plugin</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20170430122014</lastUpdated>
+  </versioning>
+</metadata>

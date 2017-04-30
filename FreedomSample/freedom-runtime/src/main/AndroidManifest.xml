@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="work.jean.com.freedom_runtime">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <service android:name=".service.FreedomService"
+            android:process=":freedom"/>
+
+        <service android:name=".service.FreedomService$InnerService"
+            android:process=":freedom"/>
+
+        <receiver android:name=".receiver.FreedomReceiver"
+            android:process=":freedom"
+            />
+
+        <receiver android:name=".receiver.ReStartAppReceiver"/>
+
+        <service android:name=".service.ReStartAppService"/>
+
+    </application>
+
+</manifest>

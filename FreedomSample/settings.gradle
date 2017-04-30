@@ -1,0 +1,1 @@
+include ':app', ':home', ':dashboard', ':notification', ':freedom-runtime'

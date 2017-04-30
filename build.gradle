@@ -1,0 +1,7 @@
+ext {
+    GROUP = 'com.jean.work'
+    VERSION = '1.0-SNAPSHOT'
+}
+
+group rootProject.ext.GROUP
+version rootProject.ext.VERSION
