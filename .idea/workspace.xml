@@ -1,61 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e84c493-417b-452c-b262-add14c7ab592" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/home/src/main/res/drawable/ic_check_done_s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/AndroidHack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/AssertionArrayException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/HackPlus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/ResUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/SPUtil.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_generateMD5_closure1$_closure3$_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_generateMD5_closure1$_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test$_run_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test$_run_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask$_dexToStr_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask$_findRelativeClasses_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask$_findRelativeClasses_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask$_transDex_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask$_transformContent_closure1.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Constants.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_generateMD5_closure1.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_generateMD5_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_readProjectSdkPath_closure2.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_readProjectSdkPath_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin$_apply_closure1$_closure2.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin$_apply_closure1$_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin$_apply_closure1.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin$_apply_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test$_run_closure1.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test$_run_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/libs/freedom-gadle-plugin-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/libs/freedom-gadle-plugin-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/Freedom.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/Freedom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/receiver/ReStartAppReceiver.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/receiver/ReStartAppReceiver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/server/FreedomServer.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/server/FreedomServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/service/FreedomService.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/service/FreedomService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/Constant.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/Constant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/DexUtil.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/DexUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/home/src/main/java/work/jean/com/home/HomeFragment.java" afterPath="$PROJECT_DIR$/FreedomSample/home/src/main/java/work/jean/com/home/HomeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/home/src/main/res/layout/fragment_home.xml" afterPath="$PROJECT_DIR$/FreedomSample/home/src/main/res/layout/fragment_home.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/home/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/FreedomSample/home/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/ivy.xml" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/ivy.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml.md5" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml.md5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml.sha1" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml.md5" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml.md5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml.sha1" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Constants.groovy" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Constants.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FileUtils.groovy" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FileUtils.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FreedomPlugin.groovy" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FreedomPlugin.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Test.groovy" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Test.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/IncrementPatchTask.groovy" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/IncrementPatchTask.groovy" />
-    </list>
+    <list default="true" id="8e84c493-417b-452c-b262-add14c7ab592" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1735,16 +1681,16 @@
       <updated>1493125100382</updated>
       <workItem from="1493125101704" duration="2120000" />
       <workItem from="1493168404372" duration="62184000" />
-      <workItem from="1493602733325" duration="10462000" />
+      <workItem from="1493602733325" duration="10598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74766000" />
+    <option name="totallyTimeSpent" value="74902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
