@@ -27,23 +27,29 @@ public class DexUtil {
             return;
         }
 
-        File patchDir = new File(context.getCacheDir(), Constant.PATCH_DIR);
+        File patchDir = new File(context.getCacheDir(), Constant.FREEDOM_DEX_PATCH_DIR);
         File[] dexs = patchDir.listFiles();
         if (dexs == null || dexs.length == 0) {
             Log.d(TAG, "no dex to load in " + patchDir.getPath());
             return;
         }
 
-        File optDir = context.getDir(Constant.OPT_DEX_DIR, Context.MODE_PRIVATE);
-        if (!optDir.exists()) {
-            optDir.mkdirs();
+        File optDir = null;
+        try {
+            optDir = context.getDir(Constant.FREEDOM_OPT_DEX_DIR, Context.MODE_PRIVATE);
+            if (!optDir.exists()) {
+                optDir.mkdirs();
+            }
+        }catch (Exception e) {
+            Log.d(TAG, "error in create opt dir", e);
         }
+
 
         for (File dex : dexs) {
             try {
 
                 mergeDex(context, dex, optDir);
-                Log.d(TAG, "inject " + dex.getName() + "success");
+                Log.d(TAG, "inject " + dex.getName() + " success");
             } catch (Exception e) {
                 Log.e(TAG, "error in load dex", e);
                 break;

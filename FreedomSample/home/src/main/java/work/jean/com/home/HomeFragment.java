@@ -22,7 +22,7 @@ public class HomeFragment extends Fragment {
             @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         tvContent = (TextView) root.findViewById(R.id.tv_content);
-        tvContent.setText("首页");
+        tvContent.setText(R.string.home);
         return root;
     }
 }

@@ -9,6 +9,7 @@ import java.util.WeakHashMap;
 
 import work.jean.com.freedom_runtime.service.FreedomService;
 import work.jean.com.freedom_runtime.util.DexUtil;
+import work.jean.com.freedom_runtime.util.ResUtil;
 
 
 /**
@@ -25,6 +26,7 @@ public class Freedom {
     public static void init(Application application) {
 
         DexUtil.loadDex(application);
+        ResUtil.loadResPatch(application);
 
         Intent intent = new Intent(application, FreedomService.class);
         application.startService(intent);

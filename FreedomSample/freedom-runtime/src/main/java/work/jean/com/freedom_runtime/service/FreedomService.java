@@ -40,7 +40,6 @@ public class FreedomService extends Service {
     public void onCreate() {
         super.onCreate();
         mAlarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        Constant.INTERNAL_CACHE_DIR = getExternalCacheDir().getAbsolutePath();
         sContext = this;
     }
 

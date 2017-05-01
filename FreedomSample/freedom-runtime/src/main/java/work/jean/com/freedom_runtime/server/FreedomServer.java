@@ -107,43 +107,81 @@ public class FreedomServer implements Runnable {
     private void handleReceiveMsg(String msg) {
         try {
 
-            File dir = new File(FreedomService.sContext.getCacheDir(), Constant.PATCH_DIR);
-            if (!dir.exists()) {
-                if (!dir.mkdirs()) {
-                    Log.e(LOG_TAG, "create " + dir.getAbsolutePath() + " failed");
-                    return;
-                }
-            }
-
             JSONObject jsonObject = new JSONObject(msg);
-            JSONArray arrName = jsonObject.getJSONArray("name");
-            JSONArray arrContent = jsonObject.getJSONArray("content");
+            boolean haveDex = false, haveRes = false;
 
-            for (int i = 0; i < arrName.length(); i++) {
-                String fileName = (String) arrName.get(i);
-                String fileContent = (String) arrContent.get(i);
-
-                File file = new File(dir, fileName);
-                if (file.exists()) {
-                    if (!file.delete()) {
-                        Log.e(LOG_TAG, "cannot delete " + file.getAbsolutePath());
+            if (jsonObject.has("dex")) {
+                File dir = new File(FreedomService.sContext.getCacheDir(), Constant.FREEDOM_DEX_PATCH_DIR);
+                if (!dir.exists()) {
+                    if (!dir.mkdirs()) {
+                        Log.e(LOG_TAG, "create " + dir.getAbsolutePath() + " failed");
                         return;
                     }
                 }
 
+                JSONObject dexObj = jsonObject.getJSONObject("dex");
+                JSONArray arrName = dexObj.getJSONArray("name");
+                JSONArray arrContent = dexObj.getJSONArray("content");
+
+                for (int i = 0; i < arrName.length(); i++) {
+                    String fileName = (String) arrName.get(i);
+                    String fileContent = (String) arrContent.get(i);
+
+                    File file = new File(dir, fileName);
+                    if (file.exists()) {
+                        if (!file.delete()) {
+                            Log.e(LOG_TAG, "cannot delete " + file.getAbsolutePath());
+                            return;
+                        }
+                    }
+
+                    FileOutputStream fileOutputStream = new FileOutputStream(file);
+                    fileOutputStream.write(Base64.decode(fileContent, Base64.DEFAULT));
+                    fileOutputStream.flush();
+                    fileOutputStream.close();
+
+                    Log.d(LOG_TAG, "save dex file in " + file.getAbsolutePath());
+                }
+
+                haveDex = true;
+            }
+
+            if (jsonObject.has("res")) {
+                JSONObject resObj = jsonObject.getJSONObject("res");
+                String patchName = resObj.getString("name");
+                String patchContent = resObj.getString("content");
+
+                File dir = new File(FreedomService.sContext.getCacheDir(), Constant.FREEDOM_RES_PATCH_DIR);
+                if (!dir.exists()) {
+                    if (!dir.mkdirs()) {
+                        Log.e(LOG_TAG, "create " + dir.getAbsolutePath() + " failed");
+                        return;
+                    }
+                }
+
+                File file = new File(dir, patchName);
+                if (file.exists()) file.delete();
+
                 FileOutputStream fileOutputStream = new FileOutputStream(file);
-                fileOutputStream.write(Base64.decode(fileContent, Base64.DEFAULT));
+                fileOutputStream.write(Base64.decode(patchContent, Base64.DEFAULT));
                 fileOutputStream.flush();
                 fileOutputStream.close();
 
-                Log.d(LOG_TAG, "save receive file in " + file.getAbsolutePath());
+                Log.d(LOG_TAG, "save res patch in " + file.getAbsolutePath());
+
+                haveRes = true;
             }
 
+            final boolean haveDexExtra = haveDex;
+            final boolean haveResExtra = haveRes;
             new Handler(Looper.getMainLooper()).post(new Runnable() {
                 @Override
                 public void run() {
-                    FreedomService.sContext.sendBroadcast(new Intent(FreedomService.sContext,
-                            ReStartAppReceiver.class));
+                    Intent intent = new Intent(FreedomService.sContext,
+                            ReStartAppReceiver.class);
+                    intent.putExtra(Constant.FREEDOM_EXTRA_HAVE_DEX, haveDexExtra);
+                    intent.putExtra(Constant.FREEDOM_EXTRA_HAVE_RES, haveResExtra);
+                    FreedomService.sContext.sendBroadcast(intent);
                 }
             });
 

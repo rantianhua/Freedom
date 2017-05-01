@@ -6,8 +6,13 @@ package work.jean.com.freedom_runtime.util;
 
 public class Constant {
 
-    public static final String PATCH_DIR = "patch";
-    public static String INTERNAL_CACHE_DIR;
+    public static final String FREEDOM_DEX_PATCH_DIR = "freedom/dex/patch";
+    public static final String FREEDOM_RES_PATCH_DIR = "freedom/res/patch";
+    public static final String FREEDOM_OPT_DEX_DIR = "freedomopt";
 
-    public static String OPT_DEX_DIR = "opt";
+    public static final String FREEDOM_SP_NAME = "sp.freedom";
+    public static final String FREEDOM_SP_KEY_NEED_LOAD_RES_PATCH = "sp.freedom.need.load.res.patch";
+
+    public static final String FREEDOM_EXTRA_HAVE_DEX = "freedom_have_dex";
+    public static final String FREEDOM_EXTRA_HAVE_RES = "freedom_have_res";
 }

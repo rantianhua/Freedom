@@ -2,7 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e84c493-417b-452c-b262-add14c7ab592" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/home/src/main/res/drawable/ic_check_done_s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/AndroidHack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/AssertionArrayException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/HackPlus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/ResUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/SPUtil.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_generateMD5_closure1$_closure3$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_generateMD5_closure1$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test$_run_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask$_dexToStr_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask$_findRelativeClasses_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask$_findRelativeClasses_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask$_transDex_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask$_transformContent_closure1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Constants.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_generateMD5_closure1.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_generateMD5_closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_readProjectSdkPath_closure2.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils$_readProjectSdkPath_closure2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FileUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin$_apply_closure1$_closure2.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin$_apply_closure1$_closure2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin$_apply_closure1.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin$_apply_closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/FreedomPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test$_run_closure1.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test$_run_closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask.class" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/classes/main/com/jean/work/taks/IncrementPatchTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/libs/freedom-gadle-plugin-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/libs/freedom-gadle-plugin-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/Freedom.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/Freedom.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/receiver/ReStartAppReceiver.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/receiver/ReStartAppReceiver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/server/FreedomServer.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/server/FreedomServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/service/FreedomService.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/service/FreedomService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/Constant.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/Constant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/DexUtil.java" afterPath="$PROJECT_DIR$/FreedomSample/freedom-runtime/src/main/java/work/jean/com/freedom_runtime/util/DexUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/home/src/main/java/work/jean/com/home/HomeFragment.java" afterPath="$PROJECT_DIR$/FreedomSample/home/src/main/java/work/jean/com/home/HomeFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/home/src/main/res/layout/fragment_home.xml" afterPath="$PROJECT_DIR$/FreedomSample/home/src/main/res/layout/fragment_home.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreedomSample/home/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/FreedomSample/home/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/build/ivy.xml" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/build/ivy.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml.md5" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml.md5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml.sha1" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/1.0-SNAPSHOT/maven-metadata.xml.sha1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml.md5" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml.md5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml.sha1" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/repo/com/jean/work/freedom-gadle-plugin/maven-metadata.xml.sha1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Constants.groovy" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Constants.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FileUtils.groovy" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FileUtils.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FreedomPlugin.groovy" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FreedomPlugin.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Test.groovy" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Test.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/IncrementPatchTask.groovy" afterPath="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/IncrementPatchTask.groovy" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -154,21 +206,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProjectChangeInfo.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/model/ProjectChangeInfo.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FreedomPlugin.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FreedomPlugin.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
               <folding>
                 <element signature="e#23#71#0" expanded="true" />
               </folding>
@@ -179,8 +221,8 @@
       <file leaf-file-name="Constants.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Constants.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+            <state relative-caret-position="297">
+              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -199,8 +241,8 @@
       <file leaf-file-name="IncrementPatchTask.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/IncrementPatchTask.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="150" column="48" lean-forward="false" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
+            <state relative-caret-position="259">
+              <caret line="195" column="33" lean-forward="false" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
               <folding>
                 <element signature="e#28#58#0" expanded="true" />
               </folding>
@@ -221,11 +263,21 @@
       <file leaf-file-name="FileUtils.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FileUtils.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1905">
-              <caret line="127" column="25" lean-forward="false" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
+            <state relative-caret-position="169">
+              <caret line="178" column="59" lean-forward="false" selection-start-line="178" selection-start-column="59" selection-end-line="178" selection-end-column="59" />
               <folding>
-                <element signature="e#23#52#0" expanded="true" />
+                <element signature="e#23#63#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Test.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -234,7 +286,17 @@
         <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadModulesTask.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/ReadModulesTask.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="233" column="17" lean-forward="false" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -803,14 +865,14 @@
         <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/IncreamentPatchTask.groovy" />
         <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/FullPatchTask.groovy" />
         <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/model/ProjectChangeInfo.groovy" />
-        <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FreedomPlugin.groovy" />
         <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/extensions/FreedomExtension.groovy" />
+        <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/ReadModulesTask.groovy" />
+        <option value="$PROJECT_DIR$/freedom-gadle-plugin/.gitignore" />
+        <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FreedomPlugin.groovy" />
         <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Constants.groovy" />
         <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Test.groovy" />
-        <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/ReadModulesTask.groovy" />
-        <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/IncrementPatchTask.groovy" />
         <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FileUtils.groovy" />
-        <option value="$PROJECT_DIR$/freedom-gadle-plugin/.gitignore" />
+        <option value="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/IncrementPatchTask.groovy" />
       </list>
     </option>
   </component>
@@ -840,7 +902,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -863,13 +925,175 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="FreedomSample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FreedomSample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FreedomSample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FreedomSample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outputs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FreedomSample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outputs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="freedom-gadle-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freedom-gadle-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freedom-gadle-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -884,6 +1108,11 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work" />
+    </key>
   </component>
   <component name="RunManager" selected="Gradle.Freedom:freedom-gadle-plugin [uploadArchives]">
     <configuration default="false" name="Freedom:freedom-gadle-plugin [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -1505,15 +1734,16 @@
       <option name="presentableId" value="Default" />
       <updated>1493125100382</updated>
       <workItem from="1493125101704" duration="2120000" />
-      <workItem from="1493168404372" duration="62112000" />
+      <workItem from="1493168404372" duration="62184000" />
+      <workItem from="1493602733325" duration="10462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64232000" />
+    <option name="totallyTimeSpent" value="74766000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1523,7 +1753,6 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1534,10 +1763,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28554216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40240964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20120482" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24320458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24821173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1988555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1545,6 +1774,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1595,6 +1825,76 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/model/ProjectChangeInfo.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FreedomPlugin.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <element signature="e#23#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Constants.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/model/FileMd5Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/IncrementPatchTask.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="150" column="48" lean-forward="false" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
+          <folding>
+            <element signature="e#28#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/extensions/FreedomExtension.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FileUtils.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="127" column="25" lean-forward="false" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
+          <folding>
+            <element signature="e#23#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1653,27 +1953,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/model/Md5Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/model/ModuleMd5Model.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/model/Md5Model.java" />
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/model/ModuleMd5Model.groovy" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/security/DigestInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="83" column="11" lean-forward="false" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1681,10 +1966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="80" column="18" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-          <folding>
-            <element signature="e#4875#4876#0" expanded="true" />
-            <element signature="e#4932#4933#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1710,7 +1991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="84" column="23" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1718,7 +1998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1726,7 +2005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1734,7 +2012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1742,7 +2019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1750,7 +2026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="17" column="56" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1758,7 +2033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-845">
           <caret line="50" column="48" lean-forward="false" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1770,21 +2044,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FreedomPlugin.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding>
-            <element signature="e#23#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/3.1/generated-gradle-jars/gradle-api-3.1.jar!/org/gradle/api/Project.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="241" column="15" lean-forward="false" selection-start-line="241" selection-start-column="15" selection-end-line="241" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1808,15 +2071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="87" column="15" lean-forward="true" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-3.1-all/ejgglywf033yp6s4x8ahmgm74/gradle-3.1/lib/groovy-all-2.4.7.jar!/org/codehaus/groovy/runtime/ResourceGroovyMethods.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2326">
-          <caret line="743" column="60" lean-forward="false" selection-start-line="743" selection-start-column="42" selection-end-line="743" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1828,46 +2082,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Constants.groovy">
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/ReadModulesTask.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        <state relative-caret-position="556">
+          <caret line="233" column="17" lean-forward="false" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="17" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FreedomPlugin.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+          <folding>
+            <element signature="e#23#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/output/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/output/res/anim-v21/design_bottom_sheet_slide_in.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/zip/ZipFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="343" column="23" lean-forward="false" selection-start-line="343" selection-start-column="23" selection-end-line="343" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/output/res/anim/abc_fade_in.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FreedomSample/app/build/outputs/apk/app-debug.apk">
+      <provider selected="true" editor-type-id="apk-viewer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Test.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state relative-caret-position="354">
+          <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/ReadModulesTask.groovy">
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/Constants.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="233" column="17" lean-forward="false" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="17" />
+        <state relative-caret-position="297">
+          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FileUtils.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="178" column="59" lean-forward="false" selection-start-line="178" selection-start-column="59" selection-end-line="178" selection-end-column="59" />
+          <folding>
+            <element signature="e#23#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-3.1-all/ejgglywf033yp6s4x8ahmgm74/gradle-3.1/lib/groovy-all-2.4.7.jar!/org/codehaus/groovy/runtime/ResourceGroovyMethods.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="828" column="38" lean-forward="false" selection-start-line="828" selection-start-column="38" selection-end-line="828" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/taks/IncrementPatchTask.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="150" column="48" lean-forward="false" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
+        <state relative-caret-position="259">
+          <caret line="195" column="33" lean-forward="false" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
           <folding>
             <element signature="e#28#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/src/main/groovy/com/jean/work/FileUtils.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="127" column="25" lean-forward="false" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
-          <folding>
-            <element signature="e#23#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1875,7 +2181,7 @@
     <entry file="file://$PROJECT_DIR$/freedom-gadle-plugin/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

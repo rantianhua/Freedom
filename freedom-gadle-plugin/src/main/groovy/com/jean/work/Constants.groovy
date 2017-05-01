@@ -25,4 +25,8 @@ class Constants {
 
 
     static int PORT_START = 16666
+
+    static String TMP_APK_DIR = "tmp_apk"
+    static String APK_OUTPUT_DIR = "output"
+    static String RES_ZIP_PATCH_NAME = "res_patch.apk"
 }

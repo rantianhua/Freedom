@@ -31,7 +31,7 @@ def fms = [new Fm(f: "f1", m: "m1"), new Fm(f: "f2", m: "m2"),new Fm(f: "f3", m:
 def map = [:]
 map.put("f", fms)
 
-def jsonBuilder = new JsonBuilder()
+//def jsonBuilder = new JsonBuilder()
 //jsonBuilder.app {
 //    state "add"
 //    content map.get("f") as List ?: [], { item ->
@@ -43,28 +43,33 @@ def jsonBuilder = new JsonBuilder()
 //    f item.f
 //    m item.m
 //}
-String app = "fff"
-jsonBuilder {
-    "${app}" list1
-}
-jsonBuilder{
-    dd list2
-}
+//String app = "fff"
+//jsonBuilder {
+//    "${app}" list1
+//}
+//jsonBuilder{
+//    dd list2
+//}
 
 
 //def parse = new JsonSlurper().parseText(jsonBuilder.toString())
 //def parseFms = parse.app
 //println(parseFms)
 
-println(jsonBuilder.toPrettyString())
+//println(jsonBuilder.toPrettyString())
+//
+//JsonBuilder js = new JsonBuilder()
+//def result = js.a {
+//    f "f"
+//}
+//
+//result.put("m", {
+//    m "m"
+//})
+//
+//println(new JsonBuilder(result).toPrettyString())
 
-JsonBuilder js = new JsonBuilder()
-def result = js.a {
-    f "f"
+File file = new File("/Users/rantianhua/bs/Freedom")
+file.eachFile {
+    println(it.name)
 }
-
-result.put("m", {
-    m "m"
-})
-
-println(new JsonBuilder(result).toPrettyString())

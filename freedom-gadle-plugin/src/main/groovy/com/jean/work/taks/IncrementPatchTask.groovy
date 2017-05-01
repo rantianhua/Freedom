@@ -8,7 +8,6 @@ import groovy.json.JsonSlurper
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException
 import org.gradle.api.tasks.TaskAction
-import org.gradle.api.tasks.compile.JavaCompile
 
 /**
  * Created by rantianhua on 17/4/27.
@@ -16,8 +15,7 @@ import org.gradle.api.tasks.compile.JavaCompile
  */
 class IncrementPatchTask extends DefaultTask {
 
-    JavaCompile javaCompile
-
+    String buildApk
 
     IncrementPatchTask() {
         group = "freedom"
@@ -43,27 +41,96 @@ class IncrementPatchTask extends DefaultTask {
         def changedSourceFiles = [:]
         collectChangedSourceFiles(changedSourceFiles, diffContent)
 
-        if (changedSourceFiles.size() == 0) {
-            println("no file changes, stop patch")
-            return
+        if (changedSourceFiles.size() > 0) {
+            findRelativeClasses(changedSourceFiles)
+            genDex()
+        }else {
+            println("no java file changes, skip patch java files")
         }
 
-        findRelativeClasses(changedSourceFiles)
+        def changedResFiles = [:]
+        collectChangedResFiles(changedResFiles, diffContent)
 
-        genDex()
+        if (changedResFiles.size() > 0) {
+            genResPatch()
+        }else {
+            println("no res file changes, skip patch res files")
+        }
 
-        transDex()
+        if (changedSourceFiles.size() > 0 || changedResFiles.size() > 0) {
+            transPatch()
+        }
     }
 
-    void transDex() {
-        File file = new File(FileUtils.getGenDexesPath(project))
-        File[] dexs = file.listFiles()
-        if (dexs.length == 0) {
-            println("no dex file, skip transform")
+    def genResPatch() {
+        if (buildApk == null) {
+            println "want gen res patch, but buildApk is null, skip"
             return
         }
 
-        String content = dexToStr(dexs)
+        File apkFile = new File(buildApk)
+        if (!apkFile.exists()) {
+            println "want gen res patch, but buildApk not exist in " + buildApk
+            return
+        }
+
+        File tmpApk = FileUtils.copyApkFile(apkFile, project)
+
+        final String outputPath = FileUtils.getTmpApkUnzipPath(project)
+        FileUtils.unZipAPk(tmpApk.absolutePath, outputPath)
+
+        File[] unzipFiles = new File(outputPath).listFiles()
+        unzipFiles.each {
+            if (it.name.endsWith(".dex")) {
+                it.delete()
+            }
+        }
+
+        File zipResFile = FileUtils.getZipResPatchFile(project)
+        if (zipResFile.exists()) zipResFile.delete()
+        FileUtils.zipDir(new File(outputPath), zipResFile)
+
+        //清理临时文件
+        new File(outputPath).deleteDir()
+        tmpApk.delete()
+    }
+
+    static def collectChangedResFiles(LinkedHashMap changedResMap, List diffContent) {
+        for (item in diffContent) {
+            Map module = item as Map
+            def moduleNames = module.keySet()
+            for (m in moduleNames) {
+                def content = module.get(m)
+                def added = content.added as List
+                def deleted = content.deleted as List
+                def modified = content.modified as List
+
+                List<String> javaFiles = new ArrayList<>()
+
+                def collect = added + modified
+                for (file in collect) {
+                    String path = file as String
+                    if (!path.endsWith(".java")) {
+                        javaFiles.add(path)
+                    }
+                }
+
+                if (javaFiles.size() > 0) {
+                    changedResMap.put(m, javaFiles)
+                }
+            }
+        }
+    }
+
+    void transPatch() {
+        String content = patchToStr()
+        if (content == null) {
+            println "no patch data to transform"
+            return
+        }
+
+        println("transform content:")
+        println(content)
 
         transformContent(content)
     }
@@ -87,20 +154,53 @@ class IncrementPatchTask extends DefaultTask {
         }
     }
 
-    static String dexToStr(File[] files) {
-
+    String patchToStr() {
         def map = [:]
-        map.put("name", [])
-        map.put("content", [])
-        files.each {File f ->
-            String name = f.name
-            map.get("name").add(name)
 
-            String content = f.newInputStream().bytes.encodeBase64()
-            map.get("content").add(content)
+        File file = new File(FileUtils.getGenDexesPath(project))
+        File[] dexs = file.listFiles()
+        if (dexs.length == 0) {
+            println("no dex file, skip transform")
+        }else {
+            def dexContent = [:]
+            dexContent.put("name", [])
+            dexContent.put("content", [])
+            map.put("dex", dexContent)
+            dexs.each {File f ->
+                String name = f.name
+                dexContent.get("name").add(name)
+
+                String content = f.newInputStream().bytes.encodeBase64()
+                dexContent.get("content").add(content)
+            }
+
+            file.deleteDir()
         }
 
-        return new JsonBuilder(map).toString()
+        File resPatchFile = FileUtils.getZipResPatchFile(project)
+        if (!resPatchFile.exists()) {
+            println("no res patch, skip transform")
+        }else {
+            def resContent = [:]
+            map.put("res", resContent)
+
+            final String name = resPatchFile.name
+            final String content = resPatchFile.newInputStream().bytes.encodeBase64()
+
+            println("patch content:")
+            println(content)
+
+            resContent.put("name", name)
+            resContent.put("content", content)
+
+            resPatchFile.delete()
+        }
+
+        if (map.size() > 0) {
+            return new JsonBuilder(map).toString()
+        }else {
+            return null
+        }
     }
 
     def findRelativeClasses(LinkedHashMap changedSourceFiles) {
@@ -205,56 +305,56 @@ class IncrementPatchTask extends DefaultTask {
         printExecute(p)
     }
 
-    void compileSourceFile(List list) {
-        List<String> javaFiles = new ArrayList<>()
-
-        for (item in list) {
-            Map module = item as Map
-            def moduleNames = module.keySet()
-            for (m in moduleNames) {
-                def content = module.get(m)
-                def added = content.added as List
-                def deleted = content.deleted as List
-                def modified = content.modified as List
-
-                def collect = added + modified
-                for (file in collect) {
-                    String path = file as String
-                    if (path.endsWith(".java")) {
-                        javaFiles.add(path)
-                    }
-                }
-            }
-        }
-
-        File classesDir = new File(FileUtils.getGenClassesPath(project))
-        if (classesDir.listFiles().size() > 0) {
-            classesDir.deleteDir()
-        }
-
-        def args = []
-        args.add("javac")
-        args.add("-target")
-        args.add("1.7")
-        args.add("-source")
-        args.add("1.7")
-        args.add("-encoding")
-        args.add("UTF-8")
-        args.add("-cp")
-        args.add(FileUtils.getAndroidJarPath(project) + ":"
-                + "/Users/rantianhua/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
-                + ":" + "/Users/rantianhua/Library/Android/sdk/extras/android/m2repository/com/android/support/design/25.3.0/design-25.3.0-sources.jar"
-                + ":" + "/Users/rantianhua/Library/Android/sdk/extras/android/m2repository/com/android/support/design/25.3.0/appcompat-v7-25.3.0-sources.jar"
-                + ":" + "/Users/rantianhua/bs/Freedom/FreedomSample/app/build/intermediates/classes/debug")
-        args.addAll(javaFiles)
-        args.add("-d")
-        args.add(FileUtils.getGenClassesPath(project))
-
-        println "execute : " + args
-
-        Process p = args.execute()
-        printExecute(p)
-    }
+//    void compileSourceFile(List list) {
+//        List<String> javaFiles = new ArrayList<>()
+//
+//        for (item in list) {
+//            Map module = item as Map
+//            def moduleNames = module.keySet()
+//            for (m in moduleNames) {
+//                def content = module.get(m)
+//                def added = content.added as List
+//                def deleted = content.deleted as List
+//                def modified = content.modified as List
+//
+//                def collect = added + modified
+//                for (file in collect) {
+//                    String path = file as String
+//                    if (path.endsWith(".java")) {
+//                        javaFiles.add(path)
+//                    }
+//                }
+//            }
+//        }
+//
+//        File classesDir = new File(FileUtils.getGenClassesPath(project))
+//        if (classesDir.listFiles().size() > 0) {
+//            classesDir.deleteDir()
+//        }
+//
+//        def args = []
+//        args.add("javac")
+//        args.add("-target")
+//        args.add("1.7")
+//        args.add("-source")
+//        args.add("1.7")
+//        args.add("-encoding")
+//        args.add("UTF-8")
+//        args.add("-cp")
+//        args.add(FileUtils.getAndroidJarPath(project) + ":"
+//                + "/Users/rantianhua/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+//                + ":" + "/Users/rantianhua/Library/Android/sdk/extras/android/m2repository/com/android/support/design/25.3.0/design-25.3.0-sources.jar"
+//                + ":" + "/Users/rantianhua/Library/Android/sdk/extras/android/m2repository/com/android/support/design/25.3.0/appcompat-v7-25.3.0-sources.jar"
+//                + ":" + "/Users/rantianhua/bs/Freedom/FreedomSample/app/build/intermediates/classes/debug")
+//        args.addAll(javaFiles)
+//        args.add("-d")
+//        args.add(FileUtils.getGenClassesPath(project))
+//
+//        println "execute : " + args
+//
+//        Process p = args.execute()
+//        printExecute(p)
+//    }
 
     void checkIncrementable(List list) {
 
