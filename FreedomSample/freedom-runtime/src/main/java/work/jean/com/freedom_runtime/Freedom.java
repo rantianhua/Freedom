@@ -5,9 +5,14 @@ import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.WeakHashMap;
 
 import work.jean.com.freedom_runtime.service.FreedomService;
+import work.jean.com.freedom_runtime.util.Constant;
 import work.jean.com.freedom_runtime.util.DexUtil;
 import work.jean.com.freedom_runtime.util.ResUtil;
 
@@ -25,6 +30,7 @@ public class Freedom {
 
     public static void init(Application application) {
 
+        addHackDexIfNeeded(application);
         DexUtil.loadDex(application);
         ResUtil.loadResPatch(application);
 
@@ -32,6 +38,27 @@ public class Freedom {
         application.startService(intent);
 
         application.registerActivityLifecycleCallbacks(lifeCycleCallback);
+    }
+
+    private static void addHackDexIfNeeded(Application application) {
+        //将freedomhack.dex放到dex的patch目录里
+        try {
+            File dir = new File(application.getCacheDir(), Constant.FREEDOM_DEX_PATCH_DIR);
+            File hackDex = new File(dir, "freedomhack.dex");
+            if (hackDex.exists()) return;
+            if (!dir.exists() || dir.listFiles().length <= 0) return;
+            InputStream inputStream = application.getAssets().open("freedomhack.dex");
+            FileOutputStream fos = new FileOutputStream(hackDex);
+            byte[] buff = new  byte[1024];
+            int len = 0;
+            while ((len = inputStream.read(buff)) != -1) {
+                fos.write(buff, 0, len);
+            }
+            inputStream.close();
+            fos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private static final Application.ActivityLifecycleCallbacks lifeCycleCallback = new Application.ActivityLifecycleCallbacks() {

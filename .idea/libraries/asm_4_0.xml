@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="asm-4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/freedom-gadle-plugin/src/libs/asm-4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

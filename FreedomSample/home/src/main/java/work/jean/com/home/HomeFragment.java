@@ -23,6 +23,7 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         tvContent = (TextView) root.findViewById(R.id.tv_content);
         tvContent.setText(R.string.home);
+//        tvContent.setText("看卡日本");
         return root;
     }
 }

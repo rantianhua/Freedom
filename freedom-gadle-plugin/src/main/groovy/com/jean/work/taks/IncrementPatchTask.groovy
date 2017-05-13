@@ -2,9 +2,14 @@ package com.jean.work.taks
 
 import com.jean.work.Constants
 import com.jean.work.FileUtils
+import com.jean.work.hack.FreedomClassVisitor
 import groovy.io.FileType
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
+import jdk.internal.org.objectweb.asm.ClassReader
+import jdk.internal.org.objectweb.asm.ClassVisitor
+import jdk.internal.org.objectweb.asm.ClassWriter
+import jdk.internal.org.objectweb.asm.Opcodes
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException
 import org.gradle.api.tasks.TaskAction
@@ -43,6 +48,7 @@ class IncrementPatchTask extends DefaultTask {
 
         if (changedSourceFiles.size() > 0) {
             findRelativeClasses(changedSourceFiles)
+            injectHacker()
             genDex()
         }else {
             println("no java file changes, skip patch java files")
@@ -59,6 +65,29 @@ class IncrementPatchTask extends DefaultTask {
 
         if (changedSourceFiles.size() > 0 || changedResFiles.size() > 0) {
             transPatch()
+        }
+    }
+
+    /**
+     * 修改字节码，进行插桩
+     */
+    def injectHacker() {
+        File classDir = new File(FileUtils.getGenClassesPath(project))
+        classDir.traverse(type: FileType.FILES) {
+            if(it.isFile()) {
+                File hackedFile = new File(it.parent, it.name + ".tmp")
+                FileInputStream fis = new FileInputStream(it)
+                FileOutputStream fos = new FileOutputStream(hackedFile)
+                ClassReader cr = new ClassReader(fis)
+                ClassWriter cw = new ClassWriter(cr, 0)
+                ClassVisitor cv = new FreedomClassVisitor(Opcodes.ASM4, cw)
+                cr.accept(cv, 0)
+                byte[] bytes =  cw.toByteArray()
+                fos.write(bytes)
+                fis.close()
+                fos.close()
+                hackedFile.renameTo(it)
+            }
         }
     }
 
@@ -255,6 +284,11 @@ class IncrementPatchTask extends DefaultTask {
                 }
             }
         }
+
+//        if(cacheClassesDir.listFiles().length > 0) {
+//            //将插桩类的class文件添加进去
+//
+//        }
     }
 
     static def collectChangedSourceFiles(Map changedSourceFiles, List diffContent) {

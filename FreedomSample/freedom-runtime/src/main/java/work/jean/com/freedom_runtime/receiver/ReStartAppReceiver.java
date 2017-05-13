@@ -39,14 +39,13 @@ public class ReStartAppReceiver extends BroadcastReceiver {
         }
 
         Activity top = null;
-        for (Map.Entry<Activity, Integer> activityIntegerEntry : Freedom.sActivitys.entrySet()) {
-            Activity activity = activityIntegerEntry.getKey();
-            if (activity != null && activityIntegerEntry.getValue() == Freedom.ACTIVITY_RESUMED) {
-                top = activity;
-                break;
-            }
-        }
-        top = null;
+//        for (Map.Entry<Activity, Integer> activityIntegerEntry : Freedom.sActivitys.entrySet()) {
+//            Activity activity = activityIntegerEntry.getKey();
+//            if (activity != null && activityIntegerEntry.getValue() == Freedom.ACTIVITY_RESUMED) {
+//                top = activity;
+//                break;
+//            }
+//        }
 
         if (top != null) {
             if (haveDex) {
